@@ -1,3 +1,5 @@
+## Problem 16
+
 def digitsum(n,p):
     valeur=n**p
     digits=str(valeur)
@@ -6,10 +8,28 @@ def digitsum(n,p):
         sum +=int(digits[i])
     return(sum)
 
-def solve(p):
+def solve16(p):
     return(digitsum(2,p))
 
 
 
-assert solve(15)==26
-print(solve(1000))
+##assert solve16(15)==26
+##print(solve16(1000))
+
+
+
+
+## Problem 22
+
+f = open('p022_names.txt','r')
+
+def tri_alpha(file):
+    L=[]
+    for s in file:
+        L=file.split(',')
+
+def alpha_value(mot):
+    value=0
+    for i in range(len(mot)):
+        value +=ord(mot[i])-ord('a')+1
+    return(value)
